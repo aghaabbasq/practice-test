@@ -5,7 +5,11 @@ Feature: search for sale
 
 
 Scenario: search
-Given Open chrome browser and go to ""
-When User is on home page search for ""
-And Choose an option from dropdown
-Then Find Sale button 
+
+Given Open chrome browser and go to homepage
+When User input and choose an option from dropdown
+Then Perform a sale search
+When User filter by selecting options from dropdowns
+Then Find propertie
+When User can sort by 
+Then Click on first non-featured property to view description 
